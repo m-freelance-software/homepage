@@ -2,89 +2,146 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+	<meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freelance Software Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #e8f0fe;
+            color: #333;
         }
         header {
-            background: #333;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
             color: #fff;
-            padding: 1em 0;
+            padding: 1.5em 0;
             text-align: center;
+            position: relative;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 0;
+        }
+        header .icon {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 60px;
+            color: #fff;
         }
         .container {
             width: 80%;
-            margin: 0 auto;
+            margin: 4em auto;
         }
         .about, .projects, .contact {
-            padding: 2em 0;
+            padding: 2em;
+            background-color: #fff;
+            margin-bottom: 2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            position: relative;
         }
         .about img {
             max-width: 150px;
             border-radius: 50%;
+            display: block;
+            margin: 0 auto;
         }
         .projects ul {
             list-style: none;
             padding: 0;
         }
         .projects li {
-            background: #fff;
+            background: #f7f7f7;
             padding: 1em;
             margin: 0.5em 0;
             border: 1px solid #ddd;
             border-radius: 4px;
+            transition: transform 0.3s;
+        }
+        .projects li:hover {
+            transform: translateY(-5px);
+        }
+        .contact .icon {
+            font-size: 2em;
+            margin-right: 0.5em;
         }
         footer {
             background: #333;
             color: #fff;
             text-align: center;
-            padding: 1em 0;
+            padding: 1.5em 0;
             margin-top: 2em;
+            position: relative;
+        }
+        footer .icon {
+            font-size: 1.5em;
+            margin-right: 0.5em;
+            color: #fff;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>John Doe</h1>
+        <h1>Marcin Nowaczyk</h1>
         <p>Freelance Software Developer</p>
+        <i class="fas fa-laptop-code icon"></i>
     </header>
     <div class="container">
         <section class="about">
             <h2>About Me</h2>
-            <img src="profile.jpg" alt="Profile Picture">
-            <p>Hi, I'm John Doe, a passionate freelance software developer with over 5 years of experience. I specialize in web development, mobile app development, and cloud computing.</p>
+            <p>Hi, I'm Marcin Nowaczyk, a passionate freelance software developer with over 5 years of experience. I specialize in web development, mobile app development, and cloud computing.</p>
         </section>
-        <section class="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <h3>Project One</h3>
-                    <p>A brief description of Project One. Technologies used: HTML, CSS, JavaScript.</p>
-                </li>
-                <li>
-                    <h3>Project Two</h3>
-                    <p>A brief description of Project Two. Technologies used: React, Node.js, Express.</p>
-                </li>
-                <li>
-                    <h3>Project Three</h3>
-                    <p>A brief description of Project Three. Technologies used: Python, Django, PostgreSQL.</p>
-                </li>
-            </ul>
-        </section>
+		<section class="experience">
+    <h2>Experience</h2>
+    <div class="job">
+        <p><strong>Innovative e-commerce platform</strong></p>
+        <ul>
+            <li>Led a team of developers to create a scalable e-commerce platform using React, Node.js, and MongoDB.</li>
+            <li>Designed and implemented RESTful APIs to integrate with third-party services, enhancing platform functionality and user experience.</li>
+            <li>Optimized application performance, achieving a 30% reduction in load times and improving overall user engagement.</li>
+            <li>Mentored junior developers, fostering an environment of continuous learning and professional growth.</li>
+        </ul>
+    </div>
+    <div class="job">
+        <p><strong>Custom web pages solutions</strong></p>
+        <ul>
+            <li>Developed and maintained responsive web applications using HTML, CSS, JavaScript, and PHP.</li>
+            <li>Collaborated with designers and clients to create user-friendly interfaces that adhered to brand guidelines.</li>
+            <li>Implemented database solutions using MySQL, ensuring data integrity and efficient querying.</li>
+            <li>Provided technical support and troubleshooting for clients, resolving issues promptly to maintain high customer satisfaction.</li>
+        </ul>
+    </div>
+    <div class="job">
+        <p><strong>Specialized cloud-based solutions</strong></p>
+        <ul>
+            <li>Designed and implemented cloud infrastructure solutions using AWS, Azure, and Google Cloud Platform (GCP).</li>
+            <li>Developed and deployed serverless applications, reducing operational costs and improving scalability.</li>
+            <li>Conducted migration of legacy systems to cloud environments, ensuring minimal downtime and data integrity.</li>
+            <li>Collaborated with cross-functional teams to develop cloud-based solutions tailored to client needs.</li>
+            <li>Provided training and support for clients to optimize their use of cloud services.</li>
+        </ul>
+    </div>
+</section>
+
         <section class="contact">
             <h2>Contact Me</h2>
-            <p>Email: john.doe@example.com</p>
-            <p>LinkedIn: linkedin.com/in/johndoe</p>
-            <p>GitHub: github.com/johndoe</p>
+            <p><i class="fas fa-envelope icon"></i>Email: m.freelance.software@proton.me</p>
+            <p><i class="fab fa-github icon"></i>GitHub: github.com/m-freelance-software (portfolio projects available on demand)</p>
         </section>
     </div>
     <footer>
-        <p>&copy; 2024 John Doe</p>
+        <p>&copy; 2024 M Freelance Software</p>
+        <i class="fas fa-code icon"></i>
     </footer>
 </body>
 </html>
